@@ -1,0 +1,31 @@
+﻿@using System.Web.Mvc;
+@using Telerik.Sitefinity.Frontend.Mvc.Helpers;
+@using Telerik.Sitefinity.Modules.Pages;
+@using Telerik.Sitefinity.UI.MVC;
+@using Telerik.Sitefinity.Services;
+
+<!DOCTYPE html>
+<html @Html.RenderLangAttribute() @Html.RenderDirAttribute()>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    @Html.Section("head")
+    
+    <title></title>
+</head>
+
+<body>
+    @Html.Section("top")
+
+    <div class="container-fluid">
+        @Html.SfPlaceHolder("Contentplaceholder1")
+    </div>
+
+    
+    @Html.Section("jquery")
+    @Html.Section("frameworks")
+    @Html.Section("plugins")
+    @Html.Section("bottom")
+</body>
+</html>
