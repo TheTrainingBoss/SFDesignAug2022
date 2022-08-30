@@ -1,0 +1,20 @@
+@model Telerik.Sitefinity.Frontend.Mvc.Models.ContentListViewModel
+
+@using Telerik.Sitefinity.Frontend.Mvc.Helpers;
+@using Telerik.Sitefinity.Modules.Pages;
+@using Telerik.Sitefinity.Web.DataResolving;
+
+<table>
+       @foreach (var item in Model.Items)
+       {
+           <tr>
+               <td>
+                   <img width="120px" height="120px" src=@item.Fields.Thumbnail.Fields.MediaUrl></img>
+               </td>
+               <td>
+                   <div>@item.Fields.Summary</div>
+               </td>
+           </tr>
+        }
+</table>
+
